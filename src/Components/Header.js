@@ -139,26 +139,42 @@ const useStyles = makeStyles((theme) => ({
         },
         "@media (max-width: 600px)": {
             height: 10,
-            paddingTop: 10   ,
-            textAlign:'left'
+            paddingTop: 10,
+            textAlign: 'left'
         },
         "@media (max-width: 500px)": {
-            paddingTop: 10   ,
-            textAlign:'left'
+            paddingTop: 10,
+            textAlign: 'left'
         },
     },
     SelectInput: {
-        fontStyle:'normal !important',
+        fontStyle: 'normal !important',
         backgroundColor: '#2C3238',
         fontSize: 11,
         fontStyle: 'normal',
         textAlign: 'center',
         color: 'white',
-        alignSelf:'center',
+        alignSelf: 'center',
         width: '95%',
-        padding:5,
-        borderRadius: 6
+        padding: 5,
+        borderRadius: 6,
+
     },
+    rootMenuItem: {
+		backgroundColor:"#2C3238 !important" ,
+        color:'white',
+		marginTop:-8,
+		marginBottom:-8,
+		"&$selected": {
+			backgroundColor: "red",
+			"&:hover": {
+				backgroundColor: "green"
+			}
+		},
+		"&:hover": {
+			backgroundColor: "blue"
+		}
+	},
     thumb: {
         background: "white",
     },
@@ -245,71 +261,73 @@ function SearchAppBar() {
 
                                     <Grid item xs={12} sm={4} >
                                         <Grid container spacing={0}>
-                                        <Grid item md={12} lg={12}   sm={12} xs={6}>
-                                        <Typography className={classes.SelectLabel}>CHART TYPE:</Typography>
-                                        </Grid>
-                                        <Grid item md={12} lg={12} sm={12} xs={6}>
-                                        <Select
-                                            className={classes.SelectInput}
-                                            labelId="demo-simple-select-filled-label"
-                                            id="demo-simple-select-filled"
-                                            value={5}
-                                            classes={{
-                                                icon: '#FFFFFF'
-                                            }}
-                                        >
-                                            
-                                            <MenuItem value={5}>
-                                                <em>DISTANCE OVER TIME</em>
-                                            </MenuItem>
-                                        </Select>
-                                        </Grid>
-                                        </Grid>
-                                    </Grid>
-                                    <Grid item xs={12} sm={4} >
-                                    <Grid container spacing={0}>
-                                        <Grid item md={12}   sm={12} xs={6}>
-                                        <Typography className={classes.SelectLabel}>APPROXIMATE VALUE:</Typography>
-                                        </Grid>
-                                        <Grid item md={12}  sm={12} xs={6}>
-                                        <Select
-                                            className={classes.SelectInput}
-                                            labelId="demo-simple-select-filled-label"
-                                            id="demo-simple-select-filled"
-                                            value={5}
-                                            classes={{
-                                                icon: '#FFFFFF'
-                                            }}
-                                        >
-                                            
-                                            <MenuItem value={5}>
-                                                <em>ONLY MISSING</em>
-                                            </MenuItem>
-                                        </Select>
-                                        </Grid>
+                                            <Grid item md={12} lg={12} sm={12} xs={6}>
+                                                <Typography className={classes.SelectLabel}>CHART TYPE:</Typography>
+                                            </Grid>
+                                            <Grid item md={12} lg={12} sm={12} xs={6}>
+                                                <Select
+                                                    className={classes.SelectInput}
+                                                    labelId="demo-simple-select-filled-label"
+                                                    id="demo-simple-select-filled"
+                                                    value={5}
+                                                    classes={{
+                                                        icon: '#FFFFFF',
+                                                       
+
+                                                    }}
+                                                >
+
+                                                    <MenuItem classes={{ root:classes.rootMenuItem}} value={5}>
+                                                        <em>DISTANCE OVER TIME</em>
+                                                    </MenuItem>
+                                                </Select>
+                                            </Grid>
                                         </Grid>
                                     </Grid>
                                     <Grid item xs={12} sm={4} >
-                                    <Grid container spacing={0}>
-                                        <Grid item md={12} lg={12}   sm={12} xs={6}>
-                                        <Typography className={classes.SelectLabel}>APPROXIMATE METHOD:</Typography>
+                                        <Grid container spacing={0}>
+                                            <Grid item md={12} sm={12} xs={6}>
+                                                <Typography className={classes.SelectLabel}>APPROXIMATE VALUE:</Typography>
+                                            </Grid>
+                                            <Grid item md={12} sm={12} xs={6}>
+                                                <Select
+                                                    className={classes.SelectInput}
+                                                    labelId="demo-simple-select-filled-label"
+                                                    id="demo-simple-select-filled"
+                                                    value={5}
+                                                    classes={{
+                                                        icon: '#FFFFFF'
+                                                    }}
+                                                >
+
+                                                    <MenuItem  classes={{ root:classes.rootMenuItem}} value={5}>
+                                                        <em>ONLY MISSING</em>
+                                                    </MenuItem>
+                                                </Select>
+                                            </Grid>
                                         </Grid>
-                                        <Grid item md={12} lg={12} sm={12} xs={6}>
-                                        <Select
-                                            className={classes.SelectInput}
-                                            labelId="demo-simple-select-filled-label"
-                                            id="demo-simple-select-filled"
-                                            value={5}
-                                            classes={{
-                                                icon: '#FFFFFF'
-                                            }}
-                                        >
-                                            
-                                            <MenuItem value={5}>
-                                                <em>AMIKA SPLINE</em>
-                                            </MenuItem>
-                                        </Select>
-                                        </Grid>
+                                    </Grid>
+                                    <Grid item xs={12} sm={4} >
+                                        <Grid container spacing={0}>
+                                            <Grid item md={12} lg={12} sm={12} xs={6}>
+                                                <Typography className={classes.SelectLabel}>APPROXIMATE METHOD:</Typography>
+                                            </Grid>
+                                            <Grid item md={12} lg={12} sm={12} xs={6}>
+                                                <Select
+                                                    className={classes.SelectInput}
+                                                    labelId="demo-simple-select-filled-label"
+                                                    id="demo-simple-select-filled"
+                                                    value={5}
+                                                    classes={{
+                                                        icon: '#FFFFFF'
+                                                    }}
+                                                >
+
+                                                    <MenuItem  classes={{ root:classes.rootMenuItem}} value={5}>
+                                                        <em>AMIKA SPLINE</em>
+                                                    </MenuItem>
+                                                </Select>
+                                            </Grid>
                                         </Grid>
                                     </Grid>
                                 </Grid>

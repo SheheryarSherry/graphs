@@ -32,7 +32,7 @@ const useStyles = makeStyles((theme) => ({
     },
     UDButton: {
         backgroundColor: 'white',
-        borderRadius: 7,
+        borderRadius: 5,
         fontSize: 6,
         border: '1px solid #000000',
         height: 15,
@@ -57,7 +57,7 @@ function ContentUD(props) {
                 <Grid item xs={10}>
                     <Grid container spacing={1}>
                         <Grid style={{ padding: 1 }} item xs={3}>
-                            <div style={{ border: '1px solid #000000', backgroundColor: props.color, borderRadius: 7,  marginTop: 0 , height: 37 }}>
+                            <div style={{ border: '1px solid #000000', backgroundColor: props.color, borderRadius: 7 , height: 37 ,width: '89%' }}>
                                 <Typography style={{fontSize: 9, textAlign: 'center',padding:11}} >
                                     Value: 75 m
                                 </Typography>
@@ -85,7 +85,7 @@ function ContentUD(props) {
                     <Grid container spacing={1}>
                         <div style={{paddingLeft:5, marginTop: 1, height: 44 }}>
 
-                            <div style={{ margin: -2, marginBottom: 0 }}>
+                            <div style={{ margin: 0, marginBottom: 0 }}>
                                 <Button
 
                                     className={classes.UDButton}
@@ -93,7 +93,7 @@ function ContentUD(props) {
                                     UPDATE
                                 </Button>
                             </div>
-                            <div style={{ margin: -2, marginBottom: 0 }}>
+                            <div style={{ margin: 0, marginBottom: 0 }}>
                                 <Button
 
                                     className={classes.UDButton}

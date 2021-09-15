@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
         fontSize: 10,
         borderRadius: 10,
         height:57,
-        width:'100%'
+        width:'98.5%'
     }
 }));
 
@@ -42,12 +42,12 @@ function Controls() {
             <Grid container spacing={1}>
 
                 <Grid item xs={6} sm={6}>
-                <input placeholder='NAME' type="text" className={classes.inputField} />
+                <input style={{width:'96.5%'}} placeholder='NAME' type="text" className={classes.inputField} />
                     {/* <TextField className={classes.textField} id="outlined-basic" label="NAME"  variant="outlined" /> */}
                 </Grid>
                 <Grid item xs={6} sm={6}>
                     {/* <TextField className={classes.textField} id="outlined-basic" label="EXCERCISE" variant="outlined" /> */}
-                    <input placeholder='EXERCISE' type="text" className={classes.inputField} />
+                    <input style={{width:'96.5%'}} placeholder='EXERCISE' type="text" className={classes.inputField} />
                 </Grid>
                 <Grid item xs={12}>
                     {/* <TextField className={classes.textField} style={{fontSize:24, textAlign:'center'}} id="outlined-basic" label="DESCRIPTION" variant="outlined" /> */}
@@ -57,7 +57,7 @@ function Controls() {
                     <Button
                         variant="contained"
                         style={{backgroundColor:'#C3EAB1', width:'100%', height:70,fontWeight:'bold',border: '1px solid #000000'}}
-                        className={classes.button}
+                        
                         endIcon={<FiberManualRecordIcon />}
                     >
                         RECORD

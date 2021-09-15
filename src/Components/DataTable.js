@@ -32,16 +32,16 @@ const rows = [
 
  function DataTable() {
   return (
-    <div style={{ height: 400, width: '100%'}}>
+    
       <DataGrid
-        style={{borderRadius:20 , backgroundColor:'#E9EEF2'}}
+      autoHeight
+        style={{borderRadius:20 ,height:'100%', backgroundColor:'#E9EEF2'}}
         rows={rows}
         columns={columns}
-        pageSize={5}
+        pageSize={10}
         checkboxSelection
         disableSelectionOnClick
       />
-    </div>
   );
 }
 export default DataTable
