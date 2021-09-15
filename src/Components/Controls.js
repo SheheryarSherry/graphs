@@ -56,7 +56,7 @@ function Controls() {
                 <Grid item xs={12}>
                     <Button
                         variant="contained"
-                        style={{backgroundColor:'#C3EAB1', width:'100%', height:70,fontWeight:'bold',border: '1px solid #000000'}}
+                        style={{borderRadius: 10,backgroundColor:'#C3EAB1', width:'100%', height:70,fontWeight:'bold',border: '1px solid #000000'}}
                         
                         endIcon={<FiberManualRecordIcon />}
                     >

@@ -24,10 +24,10 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
-        display: 'none',
-        [theme.breakpoints.up('sm')]: {
-            display: 'block',
-        },
+        // display: 'none',
+        // [theme.breakpoints.up('sm')]: {
+        //     display: 'block',
+        // },
     },
     search: {
         position: 'relative',
@@ -80,6 +80,7 @@ const useStyles = makeStyles((theme) => ({
             minWidth: 10,
             paddingLeft: 8,
             paddingRight: 8,
+            float:'right',
             "& .MuiButton-endIcon": {
                 margin: 0
             }

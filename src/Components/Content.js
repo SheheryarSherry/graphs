@@ -35,9 +35,7 @@ function Content() {
         </Grid>
         <Grid  item xs={12}>
         <div style={{ 
-          "@media (max-height: 1366px)": {
-           height:1024,
-          }, 
+          
           width: '100%'}}>
          <DataTable/>
          </div>

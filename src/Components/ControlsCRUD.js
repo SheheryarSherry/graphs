@@ -5,7 +5,7 @@ const useStyles = makeStyles((theme) => ({
     root: {
         flexGrow: 1,
         backgroundColor: '#E9EEF2',
-        padding: 20,
+        padding: 15,
         margin:5,
         borderRadius:20
     },

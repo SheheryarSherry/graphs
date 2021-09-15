@@ -37,10 +37,20 @@ const useStyles = makeStyles((theme) => ({
         border: '1px solid #000000',
         height: 15,
         "@media (max-width: 1200px)": {
+            minWidth: 55,
+          },
+        "@media (max-width: 1000px)": {
+            minWidth: 50,
+          },
+        "@media (max-width: 900px)": {
             minWidth: 30,
           },
+        "@media (max-width: 850px)": {
+            minWidth: 10,
+            padding:5
+          },
         "@media (max-width: 600px)": {
-            minWidth: 60,
+            minWidth: 90,
           },
         
         
@@ -55,10 +65,10 @@ function ContentUD(props) {
            
             <Grid container spacing={1}>
                 <Grid item xs={10}>
-                    <Grid container spacing={1}>
+                    <Grid  container spacing={1}>
                         <Grid style={{ padding: 1 }} item xs={3}>
                             <div style={{ border: '1px solid #000000', backgroundColor: props.color, borderRadius: 7 , height: 37 ,width: '89%' }}>
-                                <Typography style={{fontSize: 9, textAlign: 'center',padding:11}} >
+                                <Typography style={{fontSize: 9, textAlign: 'center',paddingTop:10}} >
                                     Value: 75 m
                                 </Typography>
                             </div>
@@ -83,7 +93,7 @@ function ContentUD(props) {
                 </Grid>
                 <Grid item xs={2} >
                     <Grid container spacing={1}>
-                        <div style={{paddingLeft:5, marginTop: 1, height: 44 }}>
+                        <div style={{paddingRight:5, marginTop: 1, height: 44 }}>
 
                             <div style={{ margin: 0, marginBottom: 0 }}>
                                 <Button
