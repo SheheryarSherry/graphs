@@ -106,13 +106,16 @@ const useStyles = makeStyles((theme) => ({
     },
     gridBackground: {
         "@media (max-width: 3000px)": {
-            margin: '35%',
+            margin: '20%',
         },
         "@media (max-width: 1200px)": {
-            margin: '25%',
+            margin: '20%',
+        },
+        "@media (max-width: 778px)": {
+            margin: '10%',
         },
         "@media (max-width: 600px)": {
-            margin: '10%',
+            margin: '2%',
         },
         backgroundColor: 'rgba(44, 50, 56, 0.85)',
         borderRadius: 20,
@@ -135,10 +138,17 @@ const useStyles = makeStyles((theme) => ({
             height: 50,
         },
         "@media (max-width: 600px)": {
-            height: 20,
+            height: 10,
+            paddingTop: 10   ,
+            textAlign:'left'
+        },
+        "@media (max-width: 500px)": {
+            paddingTop: 10   ,
+            textAlign:'left'
         },
     },
     SelectInput: {
+        fontStyle:'normal !important',
         backgroundColor: '#2C3238',
         fontSize: 11,
         fontStyle: 'normal',
@@ -231,14 +241,14 @@ function SearchAppBar() {
                                     <div style={{ padding: 5, fontSize: 20 }} className={classes.paper}>SETTINGS</div>
                                 </Grid>
 
-                                <Grid style={{ padding: 30 }} container spacing={2} >
+                                <Grid style={{ padding: 20 }} container spacing={2} >
 
                                     <Grid item xs={12} sm={4} >
                                         <Grid container spacing={0}>
-                                        <Grid item md={12} lg={12}   sm={6} xs={6}>
+                                        <Grid item md={12} lg={12}   sm={12} xs={6}>
                                         <Typography className={classes.SelectLabel}>CHART TYPE:</Typography>
                                         </Grid>
-                                        <Grid item md={12} lg={12} sm={6} xs={6}>
+                                        <Grid item md={12} lg={12} sm={12} xs={6}>
                                         <Select
                                             className={classes.SelectInput}
                                             labelId="demo-simple-select-filled-label"
@@ -258,10 +268,10 @@ function SearchAppBar() {
                                     </Grid>
                                     <Grid item xs={12} sm={4} >
                                     <Grid container spacing={0}>
-                                        <Grid item md={12}   sm={6} xs={6}>
+                                        <Grid item md={12}   sm={12} xs={6}>
                                         <Typography className={classes.SelectLabel}>APPROXIMATE VALUE:</Typography>
                                         </Grid>
-                                        <Grid item md={12}  sm={6} xs={6}>
+                                        <Grid item md={12}  sm={12} xs={6}>
                                         <Select
                                             className={classes.SelectInput}
                                             labelId="demo-simple-select-filled-label"
@@ -281,10 +291,10 @@ function SearchAppBar() {
                                     </Grid>
                                     <Grid item xs={12} sm={4} >
                                     <Grid container spacing={0}>
-                                        <Grid item md={12} lg={12}   sm={6} xs={6}>
+                                        <Grid item md={12} lg={12}   sm={12} xs={6}>
                                         <Typography className={classes.SelectLabel}>APPROXIMATE METHOD:</Typography>
                                         </Grid>
-                                        <Grid item md={12} lg={12} sm={6} xs={6}>
+                                        <Grid item md={12} lg={12} sm={12} xs={6}>
                                         <Select
                                             className={classes.SelectInput}
                                             labelId="demo-simple-select-filled-label"
@@ -304,7 +314,7 @@ function SearchAppBar() {
                                     </Grid>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <div style={{ padding: 10, marginTop: 2 }} className={classes.paper}>
+                                    <div style={{ padding: 5, margin: 10 }} className={classes.paper}>
                                         <Typography style={{ fontSize: 10, textAlign: 'left' }} id="discrete-slider-custom" gutterBottom>
                                             CUSTOM MARKS
                                         </Typography>
@@ -326,7 +336,7 @@ function SearchAppBar() {
                                     </div>
                                 </Grid>
                                 <Grid item xs={12}>
-                                    <div style={{ padding: 10, marginTop: 2 }} className={classes.paper}>
+                                    <div style={{ padding: 5, margin: 10 }} className={classes.paper}>
 
                                         <Typography style={{ fontSize: 10, textAlign: 'left' }} id="discrete-slider-custom" gutterBottom>
                                             SET CUTOFF FREQUENCY
@@ -349,7 +359,7 @@ function SearchAppBar() {
                                     </div>
                                 </Grid>
                                 <Grid item xs={12} sm={12}>
-                                    <div style={{ padding: 10, marginTop: 2 }} className={classes.paper}>
+                                    <div style={{ padding: 5, margin: 10 }} className={classes.paper}>
                                         <Typography style={{ fontSize: 10, textAlign: 'left' }} id="discrete-slider-custom" gutterBottom>
                                             SET DELTA_T
                                         </Typography>
