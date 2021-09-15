@@ -94,7 +94,6 @@ const useStyles = makeStyles((theme) => ({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-
     },
     paper: {
         // padding: theme.spacing(0),
@@ -106,7 +105,12 @@ const useStyles = makeStyles((theme) => ({
         // height: 35
     },
     gridBackground: {
-        margin: '20%',
+        "@media (max-width: 1200px)": {
+            margin: '25%',
+        },
+        "@media (max-width: 600px)": {
+            margin: '10%',
+        },
         backgroundColor: 'rgba(44, 50, 56, 0.85)',
         borderRadius: 20,
         // padding:10,
@@ -135,7 +139,7 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         color: 'white',
         alignSelf:'center',
-        width: '90%',
+        width: '95%',
         padding:5,
         borderRadius: 6
     },
