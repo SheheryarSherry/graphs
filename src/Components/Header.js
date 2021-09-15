@@ -105,6 +105,9 @@ const useStyles = makeStyles((theme) => ({
         // height: 35
     },
     gridBackground: {
+        "@media (max-width: 3000px)": {
+            margin: '35%',
+        },
         "@media (max-width: 1200px)": {
             margin: '25%',
         },
@@ -125,6 +128,9 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         marginTop: 0,
         flexWrap: 'wrap',
+        "@media (max-width: 3000px)": {
+            height: 50,
+        },
         "@media (max-width: 1200px)": {
             height: 50,
         },

@@ -57,8 +57,8 @@ function ContentUD(props) {
                 <Grid item xs={10}>
                     <Grid container spacing={1}>
                         <Grid style={{ padding: 1 }} item xs={3}>
-                            <div style={{  height: 44 }}>
-                                <Typography style={{ border: '1px solid #000000', backgroundColor: props.color, height: '80%', borderRadius: 7, fontSize: 11, textAlign: 'center', margin: 0 }} >
+                            <div style={{ border: '1px solid #000000', backgroundColor: props.color, borderRadius: 7,  marginTop: 0 , height: 37 }}>
+                                <Typography style={{fontSize: 9, textAlign: 'center',padding:11}} >
                                     Value: 75 m
                                 </Typography>
                             </div>
