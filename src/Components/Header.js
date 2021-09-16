@@ -5,11 +5,10 @@ import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import SettingsIcon from '@material-ui/icons/Settings';
-import { alpha, makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from '@material-ui/core/styles';
 import logo from '../assets/Logo.png';
 import Modal from '@material-ui/core/Modal';
 import Grid from '@material-ui/core/Grid';
-import Paper from '@material-ui/core/Paper';
 import Select from '@material-ui/core/Select';
 import { MenuItem } from '@material-ui/core';
 import Slider from '@material-ui/core/Slider';
@@ -24,34 +23,30 @@ const useStyles = makeStyles((theme) => ({
     },
     title: {
         flexGrow: 1,
-        // display: 'none',
-        // [theme.breakpoints.up('sm')]: {
-        //     display: 'block',
-        // },
     },
-    search: {
-        position: 'relative',
-        borderRadius: theme.shape.borderRadius,
-        backgroundColor: alpha(theme.palette.common.white, 0.15),
-        '&:hover': {
-            backgroundColor: alpha(theme.palette.common.white, 0.25),
-        },
-        marginLeft: 0,
-        width: '100%',
-        [theme.breakpoints.up('sm')]: {
-            marginLeft: theme.spacing(1),
-            width: 'auto',
-        },
-    },
-    searchIcon: {
-        padding: theme.spacing(0, 2),
-        height: '100%',
-        position: 'absolute',
-        pointerEvents: 'none',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    },
+    // search: {
+    //     position: 'relative',
+    //     borderRadius: theme.shape.borderRadius,
+    //     backgroundColor: alpha(theme.palette.common.white, 0.15),
+    //     '&:hover': {
+    //         backgroundColor: alpha(theme.palette.common.white, 0.25),
+    //     },
+    //     marginLeft: 0,
+    //     width: '100%',
+    //     [theme.breakpoints.up('sm')]: {
+    //         marginLeft: theme.spacing(1),
+    //         width: 'auto',
+    //     },
+    // },
+    // searchIcon: {
+    //     padding: theme.spacing(0, 2),
+    //     height: '100%',
+    //     position: 'absolute',
+    //     pointerEvents: 'none',
+    //     display: 'flex',
+    //     alignItems: 'center',
+    //     justifyContent: 'center',
+    // },
     inputRoot: {
         color: 'inherit',
     },
@@ -152,7 +147,6 @@ const useStyles = makeStyles((theme) => ({
         fontStyle: 'normal !important',
         backgroundColor: '#2C3238',
         fontSize: 11,
-        fontStyle: 'normal',
         textAlign: 'center',
         color: 'white',
         alignSelf: 'center',
@@ -166,15 +160,7 @@ const useStyles = makeStyles((theme) => ({
         color:'white',
 		marginTop:-8,
 		marginBottom:-8,
-		"&$selected": {
-			backgroundColor: "red",
-			"&:hover": {
-				backgroundColor: "green"
-			}
-		},
-		"&:hover": {
-			backgroundColor: "blue"
-		}
+		
 	},
     thumb: {
         background: "white",
