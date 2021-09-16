@@ -6,8 +6,14 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         backgroundColor: '#E9EEF2',
         padding: 15,
-        margin:5,
-        borderRadius:20
+        margin: 5,
+
+        "@media (max-width: 599px)": {
+            marginTop: -10,
+            borderTopRightRadius: 0,
+            borderTopLeftRadius: 0,
+        },
+        borderRadius: 20
     },
     paper: {
         padding: theme.spacing(0),

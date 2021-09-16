@@ -11,7 +11,11 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#E9EEF2',
         padding: 10,
         margin:5,
-        borderRadius:20
+        borderRadius:20,
+        "@media (max-width: 599px)": {
+            borderBottomRightRadius: 0,
+            borderBottomLeftRadius: 0,
+        },
     },
     paper: {
         padding: theme.spacing(0),

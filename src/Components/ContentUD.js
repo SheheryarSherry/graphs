@@ -49,9 +49,45 @@ const useStyles = makeStyles((theme) => ({
             minWidth: 10,
             padding:5
           },
-        "@media (max-width: 600px)": {
-            minWidth: 90,
+          "@media (max-width: 602px)": {
+
+            minWidth: 10,
           },
+          "@media (max-width: 610px)": {
+              minWidth: 5,
+            },
+            "@media (max-width: 599px)": {
+                minWidth: 90,
+            },
+            "@media (max-width: 540px)": {
+              minWidth: 80,
+            },
+            "@media (max-width: 532px)": {
+              minWidth: 80,
+            },
+            "@media (max-width: 520px)": {
+              minWidth: 80,
+            },
+            "@media (max-width: 511px)": {
+              minWidth: 70,
+            },
+         
+            "@media (max-width: 422px)": {
+                minWidth: 62,
+                padding:0
+            },
+            "@media (max-width: 411px)": {
+                minWidth: 60,
+                padding:0
+              },
+            "@media (max-width: 375px)": {
+                minWidth: 55,
+                padding:0
+            },
+            "@media (max-width: 320px)": {
+              minWidth: 45,
+            },
+       
         
         
     }
